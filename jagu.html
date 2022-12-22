@@ -11,16 +11,30 @@
 
 <body>
   <style>
-   
+   body{
+    background-color: #ffffff;
+   }
+li{
+  list-style: none;
+  padding: 15px;
+}
 
+
+   .navbar {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(7, 7, 7, 0.443);
+    -moz-box-shadow: 0 8px 6px -6px rgba(7, 7, 7, 0.443);
+    box-shadow: 0 8px 6px -6px rgba(7, 7, 7, 0.443);
+
+    /* the rest of your styling */
+}
     .navbar {
            
       padding: 0px;
       margin-right: 0;
             height: 70px;
              
-            /* box-shadow: h-offset v-offset blur */
-            box-shadow: 1px 0px 20px;
+            /* box-shadow: 0px 0px 20px; */
+            
         }
         .nav-link{
          color:  #ffffff;
@@ -56,6 +70,13 @@
     display: none;
     clear: both;
   }
+  .navbar {
+    -webkit-box-shadow: 0 0px 0px 0px rgba(7, 7, 7, 0.443);
+    -moz-box-shadow: 0 0px 0px 0px rgba(7, 7, 7, 0.443);
+    box-shadow: 0 0px 0px 0px rgba(7, 7, 7, 0.443);
+
+    /* the rest of your styling */
+}
 }
 @media screen and (max-width: 600px) {
   .image{
@@ -66,13 +87,16 @@
       font-size: 30px;
     }
     #text{
-      font-size: 60px;
+      font-size: 35px;
     }
     .img-fluid{
       margin-left: 30px;
     }
     a{
       color: #066700;
+    }
+    .col-sm-6{
+      height: 500px;  
     }
 }
 @media screen and (min-width: 601px) and (max-width: 2048px) {
@@ -87,15 +111,21 @@
       font-size: 70px;
     }
     .img-fluid{
-      margin-left: 55px;
+      margin-left: 62px;
     }
+    .col-sm-6{
+      height: 600px;  
+    }
+}
+.row{
+  margin-top: 70px;
 }
     </style>
 
-    <nav  class="navbar" style="background-color: #066700; box-shadow: #ffffff;">
+    <nav  class="  navbar navbar-expand-sm  fixed-top" style="background-color: #066700; ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style="color: #ffffff;">MadMedia</a>
-          <ul class="nav nav-pills" id="remove">
+          <ul class="nav" id="remove">
             <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Download</a></li>
          
@@ -105,14 +135,14 @@
       </nav>
       
         <div class="row">
-          <div class="col-sm-6 col-md-5 col-lg-6" style="background-color: #ffffff ;">
+          <div class="col-sm-6" style="background-color: #ffffff;  ">
             <div class="image">
             <h1 class="  fw-bold lh-1 mb-3" id="text" style="color: #066700; ">MadMedia <br> is a <br> meme sharing<br>social <br>network</h1>
             
           </div>     
-          <img src="Google Play.png" class="img-fluid" alt="Bootstrap Themes" width="180" height="180" loading="lazy">
+          <img src="google.png" class="img-fluid" alt="Bootstrap Themes" width="200" height="180" loading="lazy">
         </div>
-          <div class="col-sm-6 col-md-5 col-lg-6" id="remove" style="background-color: #066700 ; ">
+          <div class="col-sm-6" id="remove" style="background-color: #066700 ;   ">
           
             <img src="monkey_simplified.png" class="img-fluidlogo" alt="Bootstrap Themes" width="180" height="180" loading="lazy">
           </div>
@@ -122,13 +152,13 @@
 
 
 
+        
 
-
-              <div class="container"  id="remove1">
+              <div class="container"  id="remove1" style="background-color: white;">
             
-                  <ul class="nav justify-content-center ">
-                    <li class="nav-item" style="color: #066700;"><a href="#" class="nav-link px-2 text-muted" >Home</a></li>
-                    <li class="nav-item" style="color: #066700;"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                  <ul class="navbar navbar-expand-sm  fixed- justify-content-center ">
+                    <li class="nav-item" ><a href="#" class="nav-link"style="color: #066700;">Support</a></li>
+                    <li class="nav-item" ><a href="#" class="nav-link" style="color: #066700;">Download</a></li>
                     
                   </ul>
                   
