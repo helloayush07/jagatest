@@ -84,7 +84,7 @@ li{
       margin-top: 25px;
       font-size: 20px;  }
     .fw-bold{
-      font-size: 40px;
+      font-size: 30px;
     }
     #text{
       font-size: 35px;
@@ -101,6 +101,14 @@ li{
 }
 @media screen and (min-width: 601px) and (max-width: 2048px) {
   #remove1 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    display: none;
+    clear: both;
+  }
+
+  #log {
     visibility: hidden;
     clear: both;
     float: left;
@@ -124,7 +132,9 @@ li{
 
     <nav  class="  navbar navbar-expand-sm  fixed-top" style="background-color: #066700; ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="color: #ffffff;">MadMedia</a>
+          <a class="navbar-brand" href="#" style="color: #ffffff;">
+            <img src="monkey_simplified.png" class="navbar-brand" id="log" alt="Bootstrap Themes" width="30" height="40" loading="lazy">MadMedia
+          </a>
           <ul class="nav" id="remove">
             <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Download</a></li>
